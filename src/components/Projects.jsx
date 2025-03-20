@@ -25,23 +25,23 @@ const Projects = () => {
       description:
         " A fully responsive real-time chat application with authentication, group chats, and a favorite feature using React and Firebase.",
       skills: "html,CSS,Bootstrap,React,Firebase",
-      link: "https://amar0th05.github.io/AVMusic/",
+      link: "https://react-chat-x.vercel.app/",
     },
-    // {
-    //   image: "img6.png",
-    //   title: "Student Management System",
-    //   description:
-    //     "A fully responsive React-based system for managing student records, including registration and status tracking",
-    //   skills: "html,CSS,js,java,TServlet,jdbc,Hibernate,sql",
-    //   link: "https://amar0th05.github.io/AVMusic/",
-    // },
+    {
+      image: "img4.png",
+      title: "Styled Conferences",
+      description:
+        "A fully responsive React-based system for managing styled conferences, including registration and status tracking",
+      skills: "html,CSS,js,React",
+      link: "https://styledconferences.vercel.app/",
+    },
     {
       image: "img5.png",
       title: "To Do List",
       description:
         "A responsive task management app with add, delete, and update features using React.",
       skills: "html,CSS,js,React",
-      link: "https://amar0th05.github.io/AVMusic/",
+      link: "https://todo-lists-eight.vercel.app/",
     },
     {
       image: "img6.png",
@@ -53,35 +53,43 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="projects" className="flex flex-col items-center  gap-5 w-full min-h-screen px-10 md:px-5">
+    <div
+      id="projects"
+      className="flex flex-col items-center  gap-5 w-full min-h-screen px-10 md:px-5"
+    >
       <h1 className="text-white text-4xl">Projects</h1>
       <div>
         {project.map((data) => {
           return (
-            <motion.div    
-            initial={{y:100,opacity:0}}
-            whileInView={{y:0,opacity:1}}
-            transition={{duration:0.5}}   className="grid grid-cols-1 md:grid-cols-2  gap-6 md:gap-15 justify-items-center w-full p-8" >
-              <motion.div 
-                      
-                      initial={{x:-200,opacity:0}}
-                      whileInView={{x:0,opacity:1}}
-                      transition={{duration:1}}
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-1 md:grid-cols-2  gap-6 md:gap-15 justify-items-center w-full p-8"
+            >
+              <motion.div
+                initial={{ x: -200, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
               >
-              <img
-                src={`/assets/${data.image}`}
-                alt="no image"
-                className="h-80 w-120 md:h-65 md:w-96 object-fill rounded-4xl md:rounded-4xl"
-              />
+                <img
+                  src={`/assets/${data.image}`}
+                  alt="no image"
+                  className="h-80 w-120 md:h-65 md:w-96 object-fill rounded-4xl md:rounded-4xl"
+                />
               </motion.div>
               <motion.div
-              
-              initial={{x:100,opacity:0}}
-              whileInView={{x:0,opacity:1}}
-              transition={{duration:1}}
-              className="flex flex-col w-full md:px-0 items-center md:items-start md:justify-start gap-6">
-                <h1 className="text-white text-3xl text-center">{data.title}</h1>
-                <h3 className="text-white text-lg md:tracking-wider">{data.description}</h3>
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="flex flex-col w-full md:px-0 items-center md:items-start md:justify-start gap-6"
+              >
+                <h1 className="text-white text-3xl text-center">
+                  {data.title}
+                </h1>
+                <h3 className="text-white text-lg md:tracking-wider">
+                  {data.description}
+                </h3>
                 <div className="text-white flex w-full flex-wrap gap-2 ">
                   {data.skills.split(",").map((data) => {
                     return (
@@ -91,7 +99,11 @@ const Projects = () => {
                     );
                   })}
                 </div>
-                <a href={data.link}><button className="borde text-white bg-gradient-to-r from-blue-500 to-pink-500 px-2 hover:border border-blue-500">View Project</button></a>
+                <a href={data.link}>
+                  <button className="borde text-white bg-gradient-to-r from-blue-500 to-pink-500 px-2 hover:border border-blue-500">
+                    View Project
+                  </button>
+                </a>
               </motion.div>
             </motion.div>
           );
