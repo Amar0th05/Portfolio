@@ -27,14 +27,14 @@ const Projects = () => {
       skills: "html,CSS,Bootstrap,React,Firebase",
       link: "https://amar0th05.github.io/AVMusic/",
     },
-    {
-      image: "img6.png",
-      title: "Student Management System",
-      description:
-        "A fully responsive React-based system for managing student records, including registration and status tracking",
-      skills: "html,CSS,js,java,TServlet,jdbc,Hibernate,sql",
-      link: "https://amar0th05.github.io/AVMusic/",
-    },
+    // {
+    //   image: "img6.png",
+    //   title: "Student Management System",
+    //   description:
+    //     "A fully responsive React-based system for managing student records, including registration and status tracking",
+    //   skills: "html,CSS,js,java,TServlet,jdbc,Hibernate,sql",
+    //   link: "https://amar0th05.github.io/AVMusic/",
+    // },
     {
       image: "img5.png",
       title: "To Do List",
