@@ -87,13 +87,13 @@ const Projects = () => {
                 <h1 className="text-white md:text-3xl text-2xl text-center">
                   {data.title}
                 </h1>
-                <h3 className="text-white text-sm  md:text-lg md:tracking-wider">
+                <h3 className="text-white text-sm  text-justify md:text-lg md:tracking-wider">
                   {data.description}
                 </h3>
                 <div className="text-white flex w-full flex-wrap gap-2 ">
                   {data.skills.split(",").map((data) => {
                     return (
-                      <button className="border border-blue-500 py-1 px-2">
+                      <button className="border border-blue-500 py-1 px-2 text-sm">
                         {data}
                       </button>
                     );
