@@ -87,7 +87,7 @@ const Projects = () => {
                 <h1 className="text-white md:text-3xl text-2xl text-center">
                   {data.title}
                 </h1>
-                <h3 className="text-white text-sm  text-justify hyphens-auto md:text-lg md:tracking-wider">
+                <h3 className="text-white text-left max-w-lg mx-auto leading-relaxed tracking-wide md:text-lg md:tracking-wider">
                   {data.description}
                 </h3>
                 <div className="text-white flex w-full flex-wrap gap-2 ">
