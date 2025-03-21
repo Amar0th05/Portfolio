@@ -65,7 +65,7 @@ const Projects = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-2  gap-6 md:gap-15 justify-items-center w-full p-8"
+              className="grid grid-cols-1 md:grid-cols-2  gap-6 md:gap-15 justify-items-center w-full mb-8 md:mb-10"
             >
               <motion.div
                 initial={{ x: -200, opacity: 0 }}
@@ -82,12 +82,12 @@ const Projects = () => {
                 initial={{ x: 100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="flex flex-col w-full md:px-0 items-center md:items-start md:justify-start gap-6"
+                className="flex flex-col w-full md:px-0 px-1 items-center md:items-start md:justify-start gap-6"
               >
-                <h1 className="text-white text-3xl text-center">
+                <h1 className="text-white md:text-3xl text-2xl text-center">
                   {data.title}
                 </h1>
-                <h3 className="text-white text-lg md:tracking-wider">
+                <h3 className="text-white text-sm  md:text-lg md:tracking-wider">
                   {data.description}
                 </h3>
                 <div className="text-white flex w-full flex-wrap gap-2 ">

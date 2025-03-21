@@ -18,7 +18,7 @@ const Tech = () => {
   ];
   return (
     <>
-    <div id='tech' className='flex flex-col items-center justify-center gap-5 w-full min-h-screen mb-20 md:mb-0  px-10 md:px-5'>
+    <div id='tech' className='flex flex-col items-center justify-center gap-10 w-full min-h-screen mb-20 md:mb-0  px-10 md:px-5'>
     <h1 className='text-white text-4xl' >Skills</h1>
     
     <motion.div
@@ -30,12 +30,13 @@ const Tech = () => {
       {icons.map(({ Icon, color }, index) => (
         <motion.div
           key={index}
-          className={`w-[150px] h-[150px] ${color}`}
+          className={`w-[100px] h-[100px] md:w-[150px] md:h-[150px] ${color}`}
           initial={{ y: -20, opacity: 0 }}
-          whileInView={{ y: [0, -20, 0], opacity: 1 ,animationDuration:0.5}}
+          // whileInView={{ y: [0, -20, 0], opacity: 1 ,animationDuration:0.5}}
+          whileInView={{ y:0, opacity: 1}}
           whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
           transition={{
-            duration: 2,
+            duration: 1,
             ease: "easeInOut",
             repeatType: "mirror",
             delay: index * 0.2, // Smooth staggered effect
