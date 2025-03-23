@@ -49,7 +49,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none text-white focus:ring-2 focus:ring-blue-500"
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
         </div>
@@ -61,7 +61,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-white focus:ring-blue-500"
           />
           {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
             rows="4"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-white focus:ring-blue-500"
           ></textarea>
           {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
         </div>
